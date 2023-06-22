@@ -1,127 +1,73 @@
-<?php
-
-echo 'mostafa';
-echo ' ';
-echo' DR maha mahmoud';
-$total=200;
-
-print 'mostafa abdelaziz';
-?>
-
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo ('mostafa') ?></title>
+    <title>Document</title>
 </head>
 <body>
-    <?php
-
-    echo "<h1> to long </h1>",' ','hard','who care';
-    echo $total;
-    $employee=[
-
-        'ahmed'=>[
-            'name'=>'ahmed mohsen',
-            'phones'=>[876,7836,638]
-        ],
-
-        'mostafa'=>[
-        'mostafa'=>'mostafa abdelaziz',
-        'phones'=>[76537,758,7257]]
-
-        ];
-        echo "<br>";
+    <?=
     
-    $arrtest=[10,20,30,0=>11,40,50];
-    echo $arrtest[0];
-    $arr=[1,2,3,40=>4,5,6,];
-    var_dump($arr);
-    echo "<br>";
+    print(" my first task with printf");
+    
+    $x=260;
+    $y=$x;
+    $x=200;
+    echo '<br>';
+    echo$y;
+    echo '<br>';
 
-    $a=10;
-    $v=6.3;
-    var_dump($a*$v);
-    var_dump($a+$v);
-    var_dump($a-$v);
-    var_dump($a/$v);
-    var_dump($a**$v);
-    echo "<br>";
-
-    $x='ahmed';
-    $x .='this is my name'; 
-    var_dump($x);
-
-    var_dump(10<=>8 );
-    $is_user_logged_in=true;
-    if( $is_user_logged_in==true){
-        echo '<button> logout </button>';
-    }else{
-        echo '<button> login </button>';
+    define('databasename','amazon');
+    function test(){
+              echo databasename ;
     }
+    test();
+    echo '<br>';
+
+    $h=null;
+if ($h==false){
+    echo "false";
+}else{
+    echo "true";
+};
+echo '<br>';
+
+var_dump(gettype($h));
+echo '<br>';
+
+echo PHP_INT_MAX;
+echo '<br>';
+
+echo ceil((0.2+0.1)*0.7);
+echo '<br>';
+
+
+
+echo " Interpreter";
+echo '<br>';
+echo(
+'It converts program statements, line by line, into machine code'.'<br>'.
+'Allows modification of the program while executing'
+.'<br>'.'Relatively lesser time is consumed for analysis as it runs line by line');
+echo '<br>';
+
+
+
+echo" Compiler";
+echo '<br>';
+echo'It reads the source code and provides an executable code.'.'<br>'.
+'Translates programs written in a high-level language to a language that the CPU can understand'.'<br>'
+.'The process is relatively complicated and takes time for analysis.'.'<br>'.
+'The executable code will be in machine-specific binary code.'.'<br>'. 
+'Total run time is more and occupies a large part of the memory.';
     
-    echo"<br>";
-
-$x=10;
-$b=16;
-$m='2';
-$f=0;
-$h=2.0;
-var_dump(fdiv($x,$$f));
-var_dump(fmod($x,$b));
-
-echo "<br>";
-$x=20;
-
-echo "<br>";
-
-$x=$y=2000;
-$x=($y=13)+52;
-
-echo "<br>";
-$k=20;
-$k=$k+9;
-
-echo "<br>";
-
-$d="beso";
-$d="that one correct";
-var_dump($d);
-
-echo'<br>';
-$proglangs=['toyota','borsh','marsedes'];
-foreach($proglangs as $k=>$lang){
-    echo $k.'>'.$lang.':: <br>' ;
-}
-$langs_fram = ['php' => 'laravel' , 'java' => 'spring' , 'ruby' => 'rails'];
-foreach($langs_fram as $data=>$student){
-echo $data.'-'.$student.'<br>';
-}
-
-$user=[
-'name'=>'mostafa',
-'email'=>'mostafa@gmail',
-'pass'=>'jhgjh533',
-];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ?> 
-
+    
+    
+    
+    
+    
+    ?>
+    
 </body>
 </html>
